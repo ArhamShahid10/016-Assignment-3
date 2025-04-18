@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<script>
+  // Function to display an alert when a product is clicked
+  function showProductAlert(productName) {
+    alert(`You clicked on ${productName}!`);
+  }
+
+  // Function to toggle dark mode
+  function toggleDarkMode() {
+    document.body.classList.toggle('bg-gray-900');
+    document.body.classList.toggle('text-white');
+  }
+
+  // Function to toggle navbar collapse
+  function toggleNavbar() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('hidden');
+  }
+</script>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Knife Store</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-gray-100 m-0 p-0">
+
+  <header class="bg-gray-800 text-white py-4 text-center">
+    <h1 class="text-2xl md:text-3xl font-bold">Welcome to My Knife Store</h1>
+  </header>
+
+  <nav class="bg-gray-700 text-white py-2">
+    <div class="flex justify-between items-center px-4">
+      <h2 class="text-lg font-semibold">Menu</h2>
+      <button class="md:hidden text-white" onclick="toggleNavbar()">☰</button>
+    </div>
+    <div id="nav-links" class="hidden md:flex flex-col md:flex-row text-center space-y-2 md:space-y-0 md:space-x-4 mt-2 md:mt-0">
+      <a href="file.html" target="_blank" class="hover:underline text-sm md:text-base">Home</a>
+      <a href="Product.html" target="_blank" class="hover:underline text-sm md:text-base">Products</a>
+      <a href="about.html" target="_blank" class="hover:underline text-sm md:text-base">About Us</a>
+      <a href="Contact.html" target="_blank" class="hover:underline text-sm md:text-base">Contact</a>
+      <a href="blog.html" target="_blank" class="hover:underline text-sm md:text-base">Blog</a>
+    </div>
+  </nav>
+
+  <div class="p-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    <div class="bg-white border border-gray-300 p-4 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
+      <img src="https://cdn.shopify.com/s/files/1/0654/2226/2496/files/Wu_estof_Classic_8-inch_Chef_Bobbi_Lin_0348x_58ab572f-cc6f-40b4-9597-451149205c05.jpg?v=1728570662" alt="Knife 1" class="w-full h-auto mb-2">
+      <h2 class="text-lg font-semibold mb-1">Knife 1</h2>
+      <p class="text-gray-600">High-quality stainless steel knife.</p>
+    </div>
+
+    <div class="bg-white border border-gray-300 p-4 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
+      <img src="https://cdn.shopify.com/s/files/1/0654/2226/2496/files/Wu_estof_Classic_8-inch_Chef_Bobbi_Lin_0348x_58ab572f-cc6f-40b4-9597-451149205c05.jpg?v=1728570662" alt="Knife 2" class="w-full h-auto mb-2">
+      <h2 class="text-lg font-semibold mb-1">Knife 2</h2>
+      <p class="text-gray-600">Durable and sharp kitchen knife.</p>
+    </div>
+
+    <div class="bg-white border border-gray-300 p-4 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
+      <img src="https://cdn.shopify.com/s/files/1/0654/2226/2496/files/Wu_estof_Classic_8-inch_Chef_Bobbi_Lin_0348x_58ab572f-cc6f-40b4-9597-451149205c05.jpg?v=1728570662" alt="Knife 3" class="w-full h-auto mb-2">
+      <h2 class="text-lg font-semibold mb-1">Knife 3</h2>
+      <p class="text-gray-600">Premium quality handmade knife.</p>
+    </div>
+  </div>
+
+</body>
+</html>
